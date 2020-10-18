@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##MY-GITHUB_PAGE HOSTED LINK
+##MY-GITHUB_PAGE LINK
 https://naveen987.github.io/ImageV1/
 
 ## Available Scripts
