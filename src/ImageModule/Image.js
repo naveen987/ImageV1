@@ -1,5 +1,5 @@
 import React from "react";
-import { Carousel, Tabs, Row, Col, Table, DatePicker, Space } from "antd";
+import { Carousel, Tabs, Row, Col, Table, DatePicker, Space, Button } from "antd";
 
 const Image = () => {
   const onChange = (date, dateString) => {
@@ -202,7 +202,11 @@ const Image = () => {
         </TabPane>
         <TabPane tab="Date filter" key="3">
           <Space direction="vertical">
-            <DatePicker style={{ marginBottom: "20px" }} onChange={onChange} />
+            <div style={{display:'flex'}}>
+            <DatePicker style={{ marginBottom: "20px", marginRight:'10px' }} onChange={onChange} />
+            <Button type="primary"
+            onClick={()=>window.location.reload()}>Reset</Button>
+            </div>
           </Space>
           {dateName && <Table dataSource={dateName} columns={columns} />}
         </TabPane>
